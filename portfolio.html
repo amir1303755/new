@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Примеры Работ - VideoStudio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стилизация рамки для видео */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            margin: 20px 0;
+            border: 5px solid #f0f0f0; /* Светлая рамка */
+            border-radius: 10px; /* Скругленные углы */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+            max-width: 560px; /* Ограничение ширины */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-container iframe {
+            width: 100%; /* Видео растягивается на всю ширину контейнера */
+            height: 315px; /* Высота видео */
+            border: none;
+        }
+
+        .portfolio-item {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-item img {
+            width: 100%; /* Изображение занимает всю ширину блока */
+            max-width: 400px; /* Ограничиваем максимальную ширину */
+            height: auto;
+            border-radius: 8px; /* Скругленные углы для изображений */
+            margin-bottom: 20px;
+        }
+
+        /* Общие стили для контейнеров с видео */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>VideoStudio</h1>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги</a>
+            <a href="portfolio.html">Примеры работ</a>
+            <a href="about.html">О нас</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Примеры наших работ</h2>
+        <div class="portfolio-grid">
+            <!-- Корпоративный Видео-ролик -->
+            <div class="portfolio-item">
+                <h3>Корпоративный Видео-ролик</h3>
+                <img src="https://via.placeholder.com/400x300?text=Корпоратив+видео" alt="Корпоративное видео">
+                <p>Мы создали этот корпоративный ролик для международной компании. Он помогает эффективно донести миссию и ценности бренда.</p>
+                <div class="video-container">
+                    <!-- Вставка видео с YouTube (Корпоративный Видео-ролик) -->
+                    <iframe src="https://www.youtube.com/embed/XJMtRxl2WjI?si=cN_dQ8BrRMmLGn3f" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Рекламный ролик -->
+            <div class="portfolio-item">
+                <h3>Рекламный ролик</h3>
+                <img src="https://via.placeholder.com/400x300?text=Рекламный+ролик" alt="Рекламный ролик">
+                <p>Эта рекламная кампания была направлена на привлечение внимания к новому продукту.</p>
+                <div class="video-container">
+                    <!-- Вставка видео с YouTube (Рекламный ролик) -->
+                    <iframe src="https://www.youtube.com/embed/HxSnarV4mpI?si=IXU5hOI0S7GRQdIp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Свадебная съемка -->
+            <div class="portfolio-item">
+                <h3>Свадебная съемка</h3>
+                <img src="https://via.placeholder.com/400x300?text=Свадебная+съемка" alt="Свадебная съемка">
+                <p>Мы снимаем самые важные моменты вашей жизни. Это свадебное видео идеально передает атмосферу торжества.</p>
+                <div class="video-container">
+                    <!-- Вставка видео с YouTube (Свадебная съемка) -->
+                    <iframe src="https://www.youtube.com/embed/yZlJcjlT_N8?si=jqL9k6lon7pYRZA1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Презентация для стартапа -->
+            <div class="portfolio-item">
+                <h3>Презентация для стартапа</h3>
+                <img src="https://via.placeholder.com/400x300?text=Презентация+стартапа" alt="Презентация стартапа">
+                <p>Мы создали яркую презентацию для стартапа, которая привлекла внимание инвесторов.</p>
+                <div class="video-container">
+                    <!-- Вставка видео с YouTube (Презентация для стартапа) -->
+                    <iframe src="https://www.youtube.com/embed/GswTukl70Uk?si=jLqVxhuUyHgWODPe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VideoStudio | <a href="contact.html">Контакты</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

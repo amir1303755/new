@@ -1,0 +1,276 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1500x600?text=Video+Production');
+    background-size: cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #ff5733;
+    color: white;
+    padding: 14px 40px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e04e2c;
+}
+
+/* Services Section */
+.services-overview {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.services-overview h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex:auto
+}
+
+/* Стиль для раздела Примеры работ */
+.portfolio {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-item {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.portfolio-item button {
+    background-color: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.portfolio-item button:hover {
+    background-color: #e04e2c;
+}
+
+/* Модальное окно для видео */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Стиль для секции "О нас" */
+.about {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Стиль для секции "Контакты" */
+.contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background-color: #ff5733;
+    color: white;
+    padding: 14px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e04e2c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
